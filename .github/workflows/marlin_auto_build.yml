@@ -1,0 +1,2 @@
+- name: marlin_auto_build
+  uses: zisismaras/marlin_auto_build
