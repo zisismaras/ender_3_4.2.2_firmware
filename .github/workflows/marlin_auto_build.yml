@@ -11,4 +11,5 @@ jobs:
   create_builds:
     runs-on: ubuntu-latest 
     steps:
-    - uses: zisismaras/marlin_auto_build@v1.0.1
+    - uses: actions/checkout@v2
+    - uses: zisismaras/marlin_auto_build@v1.0.2
