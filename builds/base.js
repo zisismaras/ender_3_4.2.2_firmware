@@ -14,7 +14,7 @@ module.exports = {
     },
     configuration_adv: {
         enable: [
-            //octoprint 
+            //octoprint
             "HOST_ACTION_COMMANDS"
         ]
     }
