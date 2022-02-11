@@ -1,8 +1,13 @@
 # Ender-3 4.2.2 firmware
 
-Automatic [Marlin](https://github.com/MarlinFirmware/Marlin) builds for the Ender-3 with the stock creality 4.2.2 board.  
-**Make sure you have a 4.2.2 board before installing.**  
-You can find both stable and nightly (`bugfix-2.0.x`) downloads on the repository releases.
+Automatic [Marlin](https://github.com/MarlinFirmware/Marlin) builds for the Ender-3 with the stock creality 4.2.2(512K) board.  
+**Make sure you have a 4.2.2(512K) board before installing.**  
+You can find both stable and nightly (`bugfix-2.0.x`) downloads on the repository releases.  
+
+**Update**  
+Nightly builds are disabled for the time being until the board_env [rename](https://github.com/MarlinFirmware/Marlin/pull/23599) lands in marlin stable.  
+When this happens this repo will only have builds for the standard 512K version.  
+If you have the 256K version of the board please read [here](https://github.com/MarlinFirmware/Marlin/issues/23596).
 
 ## Builds
 
