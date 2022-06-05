@@ -8,8 +8,8 @@ module.exports = {
         enable: [
             ["STRING_CONFIG_H_AUTHOR", "(Dust, valerionew, Ender-3, zisismaras)"],
             //standard leveling menu helper
-            "LEVEL_BED_CORNERS",
-            "LEVEL_CENTER_TOO"
+            "LCD_BED_TRAMMING",
+            "BED_TRAMMING_INCLUDE_CENTER"
         ]
     },
     configuration_adv: {
