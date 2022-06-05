@@ -1,13 +1,12 @@
 # Ender-3 4.2.2 firmware
 
 Automatic [Marlin](https://github.com/MarlinFirmware/Marlin) builds for the Ender-3 with the stock creality 4.2.2(512K) board.  
-**Make sure you have a 4.2.2(512K) board before installing.**  
-You can find both stable and nightly (`bugfix-2.0.x`) downloads on the repository releases.  
+You can find both stable and nightly (`bugfix-2.1.x`) downloads on the repository releases.  
 
-**Update**  
-Nightly builds are disabled for the time being until the board_env [rename](https://github.com/MarlinFirmware/Marlin/pull/23599) lands in marlin stable.  
-When this happens this repo will only have builds for the standard 512K version.  
-If you have the 256K version of the board please read [here](https://github.com/MarlinFirmware/Marlin/issues/23596).
+**Important**
+* Make sure you have a 4.2.2 512K flash board before installing. Some newer models come with 256K of flash. You can read more [here](https://github.com/MarlinFirmware/Marlin/issues/23596). If your board is the 256K variant you can fork the repo and change the `board_env`.
+* All builds here use the default `A4988` stepper drivers, you can fork and change that if you have different ones. To find out which drivers you have there is a little marking on the sd card slot. More info [here](https://github.com/MarlinFirmware/Configurations/pull/633#issuecomment-995206382).
+* It's been a while since i used this board. The latest tested version is `2.0.9.3`.
 
 ## Builds
 
@@ -17,15 +16,12 @@ The default Marlin configuration for Ender-3.
 
 ### base
 
-Bed leveling helper menu to move around the corners. Better than having a gcode file or moving them by hand.  
+Bed leveling helper menu to move around the corners. Better than having a gcode file or moving manually.  
 Also enables `HOST_ACTION_COMMANDS` as required by octoprint.
 
 ### base_lin
 
-base + [linear advance](https://marlinfw.org/docs/features/lin_advance.html).  
-Check if your stepper drivers play nice with linear advance. People report problems with TMC2208. I have the A4988 version of the board and had no problems.  
-**Note**: all builds here use the default A4988, you might want to fork and change that if you have a different one.  
-To find out which drivers you have there is a little marking on the sd card slot. More info [here](https://github.com/MarlinFirmware/Configurations/pull/633#issuecomment-995206382).  
+base + [linear advance](https://marlinfw.org/docs/features/lin_advance.html).     
 Linear advance `K factor` is set to `0`. You can read the marlin docs on how to find and set a good value. There are also numerous videos on youtube.  
 
 ### manual_mesh
@@ -41,7 +37,7 @@ Linear advance `K factor` is set to `0`. You can read the marlin docs on how to 
 ### auto_level
 
 [automatic leveling](https://marlinfw.org/docs/gcode/G029-abl-bilinear.html)  
-**Note**: I have a CR-touch but BL-touch should work as well. Not sure about the 3D-touch clones, do some research before flashing. If you have a different type of probe you will need a different configuration.  
+**Note**: Only tested with a CR-touch but a BL-touch should work as well. Not sure about the 3D-touch clones, do some research before flashing. If you have a different type of probe you will need a different configuration.  
 
 4 different variations are provided:
 
