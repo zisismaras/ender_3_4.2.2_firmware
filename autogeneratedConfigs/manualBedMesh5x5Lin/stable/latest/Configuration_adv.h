@@ -32,7 +32,7 @@
  *
  * Basic settings can be found in Configuration.h
  */
-#define CONFIGURATION_ADV_H_VERSION 02010000
+#define CONFIGURATION_ADV_H_VERSION 02000905
 
 //===========================================================================
 //============================= Thermal Settings ============================
@@ -56,87 +56,87 @@
 // Custom Thermistor 1000 parameters
 //
 #if TEMP_SENSOR_0 == 1000
-  #define HOTEND0_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define HOTEND0_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
-  #define HOTEND0_BETA                 3950    // Beta value
+  #define HOTEND0_PULLUP_RESISTOR_OHMS    4700 // Pullup resistor
+  #define HOTEND0_RESISTANCE_25C_OHMS   100000 // Resistance at 25C
+  #define HOTEND0_BETA                    3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_1 == 1000
-  #define HOTEND1_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define HOTEND1_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
-  #define HOTEND1_BETA                 3950    // Beta value
+  #define HOTEND1_PULLUP_RESISTOR_OHMS    4700 // Pullup resistor
+  #define HOTEND1_RESISTANCE_25C_OHMS   100000 // Resistance at 25C
+  #define HOTEND1_BETA                    3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_2 == 1000
-  #define HOTEND2_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define HOTEND2_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
-  #define HOTEND2_BETA                 3950    // Beta value
+  #define HOTEND2_PULLUP_RESISTOR_OHMS    4700 // Pullup resistor
+  #define HOTEND2_RESISTANCE_25C_OHMS   100000 // Resistance at 25C
+  #define HOTEND2_BETA                    3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_3 == 1000
-  #define HOTEND3_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define HOTEND3_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
-  #define HOTEND3_BETA                 3950    // Beta value
+  #define HOTEND3_PULLUP_RESISTOR_OHMS    4700 // Pullup resistor
+  #define HOTEND3_RESISTANCE_25C_OHMS   100000 // Resistance at 25C
+  #define HOTEND3_BETA                    3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_4 == 1000
-  #define HOTEND4_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define HOTEND4_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
-  #define HOTEND4_BETA                 3950    // Beta value
+  #define HOTEND4_PULLUP_RESISTOR_OHMS    4700 // Pullup resistor
+  #define HOTEND4_RESISTANCE_25C_OHMS   100000 // Resistance at 25C
+  #define HOTEND4_BETA                    3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_5 == 1000
-  #define HOTEND5_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define HOTEND5_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
-  #define HOTEND5_BETA                 3950    // Beta value
+  #define HOTEND5_PULLUP_RESISTOR_OHMS    4700 // Pullup resistor
+  #define HOTEND5_RESISTANCE_25C_OHMS   100000 // Resistance at 25C
+  #define HOTEND5_BETA                    3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_6 == 1000
-  #define HOTEND6_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define HOTEND6_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
-  #define HOTEND6_BETA                 3950    // Beta value
+  #define HOTEND6_PULLUP_RESISTOR_OHMS    4700 // Pullup resistor
+  #define HOTEND6_RESISTANCE_25C_OHMS   100000 // Resistance at 25C
+  #define HOTEND6_BETA                    3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_7 == 1000
-  #define HOTEND7_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define HOTEND7_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
-  #define HOTEND7_BETA                 3950    // Beta value
+  #define HOTEND7_PULLUP_RESISTOR_OHMS    4700 // Pullup resistor
+  #define HOTEND7_RESISTANCE_25C_OHMS   100000 // Resistance at 25C
+  #define HOTEND7_BETA                    3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_BED == 1000
-  #define BED_PULLUP_RESISTOR_OHMS     4700    // Pullup resistor
-  #define BED_RESISTANCE_25C_OHMS      100000  // Resistance at 25C
-  #define BED_BETA                     3950    // Beta value
+  #define BED_PULLUP_RESISTOR_OHMS        4700 // Pullup resistor
+  #define BED_RESISTANCE_25C_OHMS       100000 // Resistance at 25C
+  #define BED_BETA                        3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_CHAMBER == 1000
-  #define CHAMBER_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define CHAMBER_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
-  #define CHAMBER_BETA                 3950    // Beta value
+  #define CHAMBER_PULLUP_RESISTOR_OHMS    4700 // Pullup resistor
+  #define CHAMBER_RESISTANCE_25C_OHMS   100000 // Resistance at 25C
+  #define CHAMBER_BETA                    3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_COOLER == 1000
-  #define COOLER_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define COOLER_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
-  #define COOLER_BETA                 3950    // Beta value
+  #define COOLER_PULLUP_RESISTOR_OHMS     4700 // Pullup resistor
+  #define COOLER_RESISTANCE_25C_OHMS    100000 // Resistance at 25C
+  #define COOLER_BETA                     3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_PROBE == 1000
-  #define PROBE_PULLUP_RESISTOR_OHMS   4700    // Pullup resistor
-  #define PROBE_RESISTANCE_25C_OHMS    100000  // Resistance at 25C
-  #define PROBE_BETA                   3950    // Beta value
+  #define PROBE_PULLUP_RESISTOR_OHMS      4700 // Pullup resistor
+  #define PROBE_RESISTANCE_25C_OHMS     100000 // Resistance at 25C
+  #define PROBE_BETA                      3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_BOARD == 1000
-  #define BOARD_PULLUP_RESISTOR_OHMS   4700    // Pullup resistor
-  #define BOARD_RESISTANCE_25C_OHMS    100000  // Resistance at 25C
-  #define BOARD_BETA                   3950    // Beta value
+  #define BOARD_PULLUP_RESISTOR_OHMS      4700 // Pullup resistor
+  #define BOARD_RESISTANCE_25C_OHMS     100000 // Resistance at 25C
+  #define BOARD_BETA                      3950 // Beta value
 #endif
 
 #if TEMP_SENSOR_REDUNDANT == 1000
-  #define REDUNDANT_PULLUP_RESISTOR_OHMS   4700    // Pullup resistor
-  #define REDUNDANT_RESISTANCE_25C_OHMS    100000  // Resistance at 25C
-  #define REDUNDANT_BETA                   3950    // Beta value
+  #define REDUNDANT_PULLUP_RESISTOR_OHMS  4700 // Pullup resistor
+  #define REDUNDANT_RESISTANCE_25C_OHMS 100000 // Resistance at 25C
+  #define REDUNDANT_BETA                  3950 // Beta value
 #endif
 
 /**
@@ -834,12 +834,12 @@
  * the position of the toolhead relative to the workspace.
  */
 
-//#define SENSORLESS_BACKOFF_MM  { 2, 2, 0 }  // (linear=mm, rotational=°) Backoff from endstops before sensorless homing
+//#define SENSORLESS_BACKOFF_MM  { 2, 2, 0 }  // (mm) Backoff from endstops before sensorless homing
 
-#define HOMING_BUMP_MM      { 5, 5, 2 }       // (linear=mm, rotational=°) Backoff from endstops after first bump
+#define HOMING_BUMP_MM      { 5, 5, 2 }       // (mm) Backoff from endstops after first bump
 #define HOMING_BUMP_DIVISOR { 2, 2, 4 }       // Re-Bump Speed Divisor (Divides the Homing Feedrate)
 
-//#define HOMING_BACKOFF_POST_MM { 2, 2, 2 }  // (linear=mm, rotational=°) Backoff from endstops after homing
+//#define HOMING_BACKOFF_POST_MM { 2, 2, 2 }  // (mm) Backoff from endstops after homing
 
 #define QUICK_HOME                            // If G28 contains XY do a diagonal move first
 //#define HOME_Y_BEFORE_X                     // If G28 contains XY home Y before X
@@ -1025,9 +1025,6 @@
 #define INVERT_I_STEP_PIN false
 #define INVERT_J_STEP_PIN false
 #define INVERT_K_STEP_PIN false
-#define INVERT_U_STEP_PIN false
-#define INVERT_V_STEP_PIN false
-#define INVERT_W_STEP_PIN false
 #define INVERT_E_STEP_PIN false
 
 /**
@@ -1042,14 +1039,11 @@
 #define DISABLE_INACTIVE_I true
 #define DISABLE_INACTIVE_J true
 #define DISABLE_INACTIVE_K true
-#define DISABLE_INACTIVE_U true
-#define DISABLE_INACTIVE_V true
-#define DISABLE_INACTIVE_W true
 #define DISABLE_INACTIVE_E true
 
 // Default Minimum Feedrates for printing and travel moves
-#define DEFAULT_MINIMUMFEEDRATE       0.0     // (mm/s. °/s for rotational-only moves) Minimum feedrate. Set with M205 S.
-#define DEFAULT_MINTRAVELFEEDRATE     0.0     // (mm/s. °/s for rotational-only moves) Minimum travel feedrate. Set with M205 T.
+#define DEFAULT_MINIMUMFEEDRATE       0.0     // (mm/s) Minimum feedrate. Set with M205 S.
+#define DEFAULT_MINTRAVELFEEDRATE     0.0     // (mm/s) Minimum travel feedrate. Set with M205 T.
 
 // Minimum time that a segment needs to take as the buffer gets emptied
 #define DEFAULT_MINSEGMENTTIME        20000   // (µs) Set with M205 B.
@@ -1085,7 +1079,7 @@
 #if ENABLED(BACKLASH_COMPENSATION)
   // Define values for backlash distance and correction.
   // If BACKLASH_GCODE is enabled these values are the defaults.
-  #define BACKLASH_DISTANCE_MM { 0, 0, 0 } // (linear=mm, rotational=°) One value for each linear axis
+  #define BACKLASH_DISTANCE_MM { 0, 0, 0 } // (mm) One value for each linear axis
   #define BACKLASH_CORRECTION    0.0       // 0.0 = no correction; 1.0 = full correction
 
   // Add steps for motor direction changes on CORE kinematics
@@ -1162,12 +1156,6 @@
   //#define CALIBRATION_MEASURE_JMAX
   //#define CALIBRATION_MEASURE_KMIN
   //#define CALIBRATION_MEASURE_KMAX
-  //#define CALIBRATION_MEASURE_UMIN
-  //#define CALIBRATION_MEASURE_UMAX
-  //#define CALIBRATION_MEASURE_VMIN
-  //#define CALIBRATION_MEASURE_VMAX
-  //#define CALIBRATION_MEASURE_WMIN
-  //#define CALIBRATION_MEASURE_WMAX
 
   // Probing at the exact top center only works if the center is flat. If
   // probing on a screwhead or hollow washer, probe near the edges.
@@ -2027,21 +2015,6 @@
 // @section leveling
 
 /**
- * Use Safe Bed Leveling coordinates to move axes to a useful position before bed probing.
- * For example, after homing a rotational axis the Z probe might not be perpendicular to the bed.
- * Choose values the orient the bed horizontally and the Z-probe vertically.
- */
-//#define SAFE_BED_LEVELING_START_X 0.0
-//#define SAFE_BED_LEVELING_START_Y 0.0
-//#define SAFE_BED_LEVELING_START_Z 0.0
-//#define SAFE_BED_LEVELING_START_I 0.0
-//#define SAFE_BED_LEVELING_START_J 0.0
-//#define SAFE_BED_LEVELING_START_K 0.0
-//#define SAFE_BED_LEVELING_START_U 0.0
-//#define SAFE_BED_LEVELING_START_V 0.0
-//#define SAFE_BED_LEVELING_START_W 0.0
-
-/**
  * Points to probe for all 3-point Leveling procedures.
  * Override if the automatically selected points are inadequate.
  */
@@ -2452,7 +2425,7 @@
 
   /**
    * Extra G-code to run while executing tool-change commands. Can be used to use an additional
-   * stepper motor (e.g., I axis in Configuration.h) to drive the tool-changer.
+   * stepper motor (I axis, see option LINEAR_AXES in Configuration.h) to drive the tool-changer.
    */
   //#define EVENT_GCODE_TOOLCHANGE_T0 "G28 A\nG1 A0" // Extra G-code to run while executing tool-change command T0
   //#define EVENT_GCODE_TOOLCHANGE_T1 "G1 A10"       // Extra G-code to run while executing tool-change command T1
@@ -2659,24 +2632,6 @@
     #define K_MICROSTEPS       16
   #endif
 
-  #if AXIS_DRIVER_TYPE_U(TMC26X)
-    #define U_MAX_CURRENT    1000
-    #define U_SENSE_RESISTOR   91
-    #define U_MICROSTEPS       16
-  #endif
-
-  #if AXIS_DRIVER_TYPE_V(TMC26X)
-    #define V_MAX_CURRENT    1000
-    #define V_SENSE_RESISTOR   91
-    #define V_MICROSTEPS       16
-  #endif
-
-  #if AXIS_DRIVER_TYPE_W(TMC26X)
-    #define W_MAX_CURRENT    1000
-    #define W_SENSE_RESISTOR   91
-    #define W_MICROSTEPS       16
-  #endif
-
   #if AXIS_DRIVER_TYPE_E0(TMC26X)
     #define E0_MAX_CURRENT    1000
     #define E0_SENSE_RESISTOR   91
@@ -2865,36 +2820,6 @@
     //#define K_HOLD_MULTIPLIER 0.5
   #endif
 
-  #if AXIS_IS_TMC(U)
-    #define U_CURRENT      800
-    #define U_CURRENT_HOME U_CURRENT
-    #define U_MICROSTEPS     8
-    #define U_RSENSE         0.11
-    #define U_CHAIN_POS     -1
-    //#define U_INTERPOLATE  true
-    //#define U_HOLD_MULTIPLIER 0.5
-  #endif
-
-  #if AXIS_IS_TMC(V)
-    #define V_CURRENT      800
-    #define V_CURRENT_HOME V_CURRENT
-    #define V_MICROSTEPS     8
-    #define V_RSENSE         0.11
-    #define V_CHAIN_POS     -1
-    //#define V_INTERPOLATE  true
-    //#define V_HOLD_MULTIPLIER 0.5
-  #endif
-
-  #if AXIS_IS_TMC(W)
-    #define W_CURRENT      800
-    #define W_CURRENT_HOME W_CURRENT
-    #define W_MICROSTEPS     8
-    #define W_RSENSE         0.11
-    #define W_CHAIN_POS     -1
-    //#define W_INTERPOLATE  true
-    //#define W_HOLD_MULTIPLIER 0.5
-  #endif
-
   #if AXIS_IS_TMC(E0)
     #define E0_CURRENT      650
     #define E0_MICROSTEPS    16
@@ -2982,9 +2907,6 @@
   //#define I_CS_PIN          -1
   //#define J_CS_PIN          -1
   //#define K_CS_PIN          -1
-  //#define U_CS_PIN          -1
-  //#define V_CS_PIN          -1
-  //#define W_CS_PIN          -1
   //#define E0_CS_PIN         -1
   //#define E1_CS_PIN         -1
   //#define E2_CS_PIN         -1
@@ -3027,9 +2949,6 @@
   //#define  I_SLAVE_ADDRESS 0
   //#define  J_SLAVE_ADDRESS 0
   //#define  K_SLAVE_ADDRESS 0
-  //#define  U_SLAVE_ADDRESS 0
-  //#define  V_SLAVE_ADDRESS 0
-  //#define  W_SLAVE_ADDRESS 0
   //#define E0_SLAVE_ADDRESS 0
   //#define E1_SLAVE_ADDRESS 0
   //#define E2_SLAVE_ADDRESS 0
@@ -3057,9 +2976,6 @@
   #define STEALTHCHOP_I
   #define STEALTHCHOP_J
   #define STEALTHCHOP_K
-  #define STEALTHCHOP_U
-  #define STEALTHCHOP_V
-  #define STEALTHCHOP_W
   #define STEALTHCHOP_E
 
   /**
@@ -3086,12 +3002,9 @@
   //#define CHOPPER_TIMING_Z2 CHOPPER_TIMING_Z
   //#define CHOPPER_TIMING_Z3 CHOPPER_TIMING_Z
   //#define CHOPPER_TIMING_Z4 CHOPPER_TIMING_Z
-  //#define CHOPPER_TIMING_I  CHOPPER_TIMING        // For I Axis
-  //#define CHOPPER_TIMING_J  CHOPPER_TIMING        // For J Axis
-  //#define CHOPPER_TIMING_K  CHOPPER_TIMING        // For K Axis
-  //#define CHOPPER_TIMING_U  CHOPPER_TIMING        // For U Axis
-  //#define CHOPPER_TIMING_V  CHOPPER_TIMING        // For V Axis
-  //#define CHOPPER_TIMING_W  CHOPPER_TIMING        // For W Axis
+  //#define CHOPPER_TIMING_I  CHOPPER_TIMING
+  //#define CHOPPER_TIMING_J  CHOPPER_TIMING
+  //#define CHOPPER_TIMING_K  CHOPPER_TIMING
   //#define CHOPPER_TIMING_E  CHOPPER_TIMING        // For Extruders (override below)
   //#define CHOPPER_TIMING_E1 CHOPPER_TIMING_E
   //#define CHOPPER_TIMING_E2 CHOPPER_TIMING_E
@@ -3137,12 +3050,9 @@
   #define Z2_HYBRID_THRESHOLD      3
   #define Z3_HYBRID_THRESHOLD      3
   #define Z4_HYBRID_THRESHOLD      3
-  #define I_HYBRID_THRESHOLD       3  // [linear=mm/s, rotational=°/s]
-  #define J_HYBRID_THRESHOLD       3  // [linear=mm/s, rotational=°/s]
-  #define K_HYBRID_THRESHOLD       3  // [linear=mm/s, rotational=°/s]
-  #define U_HYBRID_THRESHOLD       3  // [mm/s]
-  #define V_HYBRID_THRESHOLD       3
-  #define W_HYBRID_THRESHOLD       3
+  #define I_HYBRID_THRESHOLD       3
+  #define J_HYBRID_THRESHOLD       3
+  #define K_HYBRID_THRESHOLD       3
   #define E0_HYBRID_THRESHOLD     30
   #define E1_HYBRID_THRESHOLD     30
   #define E2_HYBRID_THRESHOLD     30
@@ -3192,9 +3102,6 @@
     //#define I_STALL_SENSITIVITY  8
     //#define J_STALL_SENSITIVITY  8
     //#define K_STALL_SENSITIVITY  8
-    //#define U_STALL_SENSITIVITY  8
-    //#define V_STALL_SENSITIVITY  8
-    //#define W_STALL_SENSITIVITY  8
     //#define SPI_ENDSTOPS              // TMC2130 only
     //#define IMPROVE_HOMING_RELIABILITY
   #endif
@@ -3360,33 +3267,6 @@
     #define K_MAX_VOLTAGE     127
     #define K_CHAIN_POS        -1
     #define K_SLEW_RATE         1
-  #endif
-
-  #if AXIS_IS_L64XX(U)
-    #define U_MICROSTEPS      128
-    #define U_OVERCURRENT    2000
-    #define U_STALLCURRENT   1500
-    #define U_MAX_VOLTAGE     127
-    #define U_CHAIN_POS        -1
-    #define U_SLEW_RATE         1
-  #endif
-
-  #if AXIS_IS_L64XX(V)
-    #define V_MICROSTEPS      128
-    #define V_OVERCURRENT    2000
-    #define V_STALLCURRENT   1500
-    #define V_MAX_VOLTAGE     127
-    #define V_CHAIN_POS        -1
-    #define V_SLEW_RATE         1
-  #endif
-
-  #if AXIS_IS_L64XX(W)
-    #define W_MICROSTEPS      128
-    #define W_OVERCURRENT    2000
-    #define W_STALLCURRENT   1500
-    #define W_MAX_VOLTAGE     127
-    #define W_CHAIN_POS        -1
-    #define W_SLEW_RATE         1
   #endif
 
   #if AXIS_IS_L64XX(E0)
@@ -3594,6 +3474,9 @@
   #if ENABLED(SPINDLE_LASER_USE_PWM)
     #define SPINDLE_LASER_PWM_INVERT    false  // Set to "true" if the speed/power goes up when you want it to go slower
     #define SPINDLE_LASER_FREQUENCY     2500   // (Hz) Spindle/laser frequency (only on supported HALs: AVR, ESP32, and LPC)
+                                               // ESP32: If SPINDLE_LASER_PWM_PIN is onboard then <=78125Hz. For I2S expander
+                                               //  the frequency determines the PWM resolution. 2500Hz = 0-100, 977Hz = 0-255, ...
+                                               //  (250000 / SPINDLE_LASER_FREQUENCY) = max value.
   #endif
 
   //#define AIR_EVACUATION                     // Cutter Vacuum / Laser Blower motor control with G-codes M10-M11
@@ -3667,8 +3550,11 @@
     #endif
 
     // Define the minimum and maximum test pulse time values for a laser test fire function
-    #define LASER_TEST_PULSE_MIN           1   // Used with Laser Control Menu
-    #define LASER_TEST_PULSE_MAX         999   // Caution: Menu may not show more than 3 characters
+    #define LASER_TEST_PULSE_MIN           1   // (ms) Used with Laser Control Menu
+    #define LASER_TEST_PULSE_MAX         999   // (ms) Caution: Menu may not show more than 3 characters
+
+    #define SPINDLE_LASER_POWERUP_DELAY   50   // (ms) Delay to allow the spindle/laser to come up to speed/power
+    #define SPINDLE_LASER_POWERDOWN_DELAY 50   // (ms) Delay to allow the spindle to stop
 
    /**
     * Laser Safety Timeout
@@ -3681,79 +3567,38 @@
     #define LASER_SAFETY_TIMEOUT_MS     1000   // (ms)
 
     /**
-     * Enable inline laser power to be handled in the planner / stepper routines.
-     * Inline power is specified by the I (inline) flag in an M3 command (e.g., M3 S20 I)
-     * or by the 'S' parameter in G0/G1/G2/G3 moves (see LASER_MOVE_POWER).
+     * Any M3 or G1/2/3/5 command with the 'I' parameter enables continuous inline power mode.
      *
-     * This allows the laser to keep in perfect sync with the planner and removes
-     * the powerup/down delay since lasers require negligible time.
+     * e.g., 'M3 I' enables continuous inline power which is processed by the planner.
+     * Power is stored in move blocks and applied when blocks are processed by the Stepper ISR.
+     *
+     * 'M4 I' sets dynamic mode which uses the current feedrate to calculate a laser power OCR value.
+     *
+     * Any move in dynamic mode will use the current feedrate to calculate the laser power.
+     * Feed rates are set by the F parameter of a move command e.g. G1 X0 Y10 F6000
+     * Laser power would be calculated by bit shifting off 8 LSB's. In binary this is div 256.
+     * The calculation gives us ocr values from 0 to 255, values over F65535 will be set as 255 .
+     * More refined power control such as compesation for accell/decell will be addressed in future releases.
+     *
+     * M5 I clears inline mode and set power to 0, M5 sets the power output to 0 but leaves inline mode on.
      */
-    //#define LASER_POWER_INLINE
 
-    #if ENABLED(LASER_POWER_INLINE)
-      /**
-       * Scale the laser's power in proportion to the movement rate.
-       *
-       * - Sets the entry power proportional to the entry speed over the nominal speed.
-       * - Ramps the power up every N steps to approximate the speed trapezoid.
-       * - Due to the limited power resolution this is only approximate.
-       */
-      #define LASER_POWER_INLINE_TRAPEZOID
+    /**
+     * Enable M3 commands for laser mode inline power planner syncing.
+     * This feature enables any M3 S-value to be injected into the block buffers while in
+     * CUTTER_MODE_CONTINUOUS. The option allows M3 laser power to be commited without waiting
+     * for a planner syncronization
+     */
+    //#define LASER_POWER_SYNC
 
-      /**
-       * Continuously calculate the current power (nominal_power * current_rate / nominal_rate).
-       * Required for accurate power with non-trapezoidal acceleration (e.g., S_CURVE_ACCELERATION).
-       * This is a costly calculation so this option is discouraged on 8-bit AVR boards.
-       *
-       * LASER_POWER_INLINE_TRAPEZOID_CONT_PER defines how many step cycles there are between power updates. If your
-       * board isn't able to generate steps fast enough (and you are using LASER_POWER_INLINE_TRAPEZOID_CONT), increase this.
-       * Note that when this is zero it means it occurs every cycle; 1 means a delay wait one cycle then run, etc.
-       */
-      //#define LASER_POWER_INLINE_TRAPEZOID_CONT
-
-      /**
-       * Stepper iterations between power updates. Increase this value if the board
-       * can't keep up with the processing demands of LASER_POWER_INLINE_TRAPEZOID_CONT.
-       * Disable (or set to 0) to recalculate power on every stepper iteration.
-       */
-      //#define LASER_POWER_INLINE_TRAPEZOID_CONT_PER 10
-
-      /**
-       * Include laser power in G0/G1/G2/G3/G5 commands with the 'S' parameter
-       */
-      //#define LASER_MOVE_POWER
-
-      #if ENABLED(LASER_MOVE_POWER)
-        // Turn off the laser on G0 moves with no power parameter.
-        // If a power parameter is provided, use that instead.
-        //#define LASER_MOVE_G0_OFF
-
-        // Turn off the laser on G28 homing.
-        //#define LASER_MOVE_G28_OFF
-      #endif
-
-      /**
-       * Inline flag inverted
-       *
-       * WARNING: M5 will NOT turn off the laser unless another move
-       *          is done (so G-code files must end with 'M5 I').
-       */
-      //#define LASER_POWER_INLINE_INVERT
-
-      /**
-       * Continuously apply inline power. ('M3 S3' == 'G1 S3' == 'M3 S3 I')
-       *
-       * The laser might do some weird things, so only enable this
-       * feature if you understand the implications.
-       */
-      //#define LASER_POWER_INLINE_CONTINUOUS
-
-    #else
-
-      #define SPINDLE_LASER_POWERUP_DELAY     50 // (ms) Delay to allow the spindle/laser to come up to speed/power
-      #define SPINDLE_LASER_POWERDOWN_DELAY   50 // (ms) Delay to allow the spindle to stop
-
-    #endif
+    /**
+     * Scale the laser's power in proportion to the movement rate.
+     *
+     * - Sets the entry power proportional to the entry speed over the nominal speed.
+     * - Ramps the power up every N steps to approximate the speed trapezoid.
+     * - Due to the limited power resolution this is only approximate.
+     */
+    //#define LASER_POWER_TRAP
 
     //
     // Laser I2C Ammeter (High precision INA226 low/high side module)
