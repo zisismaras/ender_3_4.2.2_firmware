@@ -21,8 +21,6 @@
  */
 #pragma once
 
-#define CONFIG_EXAMPLES_DIR "Creality/Ender-3/CrealityV422"
-
 /**
  * Configuration_adv.h
  *
@@ -37,7 +35,7 @@
 // @section develop
 
 /**
- * Configuration Export to JSON and INI format
+ * Configuration Export
  *
  * Export the configuration as part of the build. (See signature.py)
  * Output files are saved with the build (e.g., .pio/build/mega2560).
@@ -1595,6 +1593,9 @@
    * Endstops must be activated for this option to work.
    */
   //#define SD_ABORT_ON_ENDSTOP_HIT
+  #if ENABLED(SD_ABORT_ON_ENDSTOP_HIT)
+    //#define SD_ABORT_ON_ENDSTOP_HIT_GCODE "G28XY" // G-code to run on endstop hit (e.g., "G28XY" or "G27")
+  #endif
 
   //#define SD_REPRINT_LAST_SELECTED_FILE // On print completion open the LCD Menu and select the same file
 
