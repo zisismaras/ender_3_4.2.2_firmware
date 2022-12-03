@@ -1064,12 +1064,14 @@
  *
  * Zero Vibration (ZV) Input Shaping for X and/or Y movements.
  *
- * This option uses a lot of SRAM for the step buffer, which is proportional
- * to the largest step rate possible for any axis. If the build fails due to
+ * This option uses a lot of SRAM for the step buffer, which is related to the
+ * largest step rate possible for the shaped axes. If the build fails due to
  * low SRAM the buffer size may be reduced by setting smaller values for
- * DEFAULT_AXIS_STEPS_PER_UNIT and/or DEFAULT_MAX_FEEDRATE. Runtime editing
- * of max feedrate (M203) or resonant frequency (M593) may result feedrate
- * being capped to prevent buffer overruns.
+ * DEFAULT_AXIS_STEPS_PER_UNIT and/or DEFAULT_MAX_FEEDRATE. Disabling
+ * ADAPTIVE_STEP_SMOOTHING and reducing the step rate for non-shaped axes may
+ * also reduce the buffer sizes. Runtime editing of max feedrate (M203) or
+ * resonant frequency (M593) may result in input shaping losing effectiveness
+ * during high speed movements to prevent buffer overruns.
  *
  * Tune with M593 D<factor> F<frequency>:
  *
@@ -1079,12 +1081,17 @@
  *  X<1>         Set the given parameters only for the X axis.
  *  Y<1>         Set the given parameters only for the Y axis.
  */
-//#define INPUT_SHAPING
-#if ENABLED(INPUT_SHAPING)
-  #define SHAPING_FREQ_X    40  // (Hz) The dominant resonant frequency of the X axis.
-  #define SHAPING_FREQ_Y    40  // (Hz) The dominant resonant frequency of the Y axis.
-  #define SHAPING_ZETA_X  0.3f  // Damping ratio of the X axis (range: 0.0 = no damping to 1.0 = critical damping).
-  #define SHAPING_ZETA_Y  0.3f  // Damping ratio of the Y axis (range: 0.0 = no damping to 1.0 = critical damping).
+//#define INPUT_SHAPING_X
+//#define INPUT_SHAPING_Y
+#if EITHER(INPUT_SHAPING_X, INPUT_SHAPING_Y)
+  #if ENABLED(INPUT_SHAPING_X)
+    #define SHAPING_FREQ_X  40    // (Hz) The default dominant resonant frequency on the X axis.
+    #define SHAPING_ZETA_X  0.15f // Damping ratio of the X axis (range: 0.0 = no damping to 1.0 = critical damping).
+  #endif
+  #if ENABLED(INPUT_SHAPING_Y)
+    #define SHAPING_FREQ_Y  40    // (Hz) The default dominant resonant frequency on the Y axis.
+    #define SHAPING_ZETA_Y  0.15f // Damping ratio of the Y axis (range: 0.0 = no damping to 1.0 = critical damping).
+  #endif
   //#define SHAPING_MENU        // Add a menu to the LCD to set shaping parameters.
 #endif
 
@@ -2088,9 +2095,13 @@
   //#define BABYSTEP_DISPLAY_TOTAL          // Display total babysteps since last G28
 
   #define BABYSTEP_ZPROBE_OFFSET //ORIGINAL:   //#define BABYSTEP_ZPROBE_OFFSET          // Combine M851 Z and Babystepping
-  #if ENABLED(BABYSTEP_ZPROBE_OFFSET)
-    //#define BABYSTEP_HOTEND_Z_OFFSET      // For multiple hotends, babystep relative Z offsets
-    //#define BABYSTEP_ZPROBE_GFX_OVERLAY   // Enable graphical overlay on Z-offset editor
+  //#define BABYSTEP_GLOBAL_Z               // Combine M424 Z and Babystepping
+
+  #if EITHER(BABYSTEP_ZPROBE_OFFSET, BABYSTEP_GLOBAL_Z)
+    #if ENABLED(BABYSTEP_ZPROBE_OFFSET)
+      //#define BABYSTEP_HOTEND_Z_OFFSET    // For multiple hotends, babystep relative Z offsets
+    #endif
+    //#define BABYSTEP_GFX_OVERLAY          // Enable graphical overlay on Z-offset editor
   #endif
 #endif
 
@@ -3027,15 +3038,17 @@
    * Use Trinamic's ultra quiet stepping mode.
    * When disabled, Marlin will use spreadCycle stepping mode.
    */
-  #define STEALTHCHOP_XY
-  #define STEALTHCHOP_Z
-  #define STEALTHCHOP_I
-  #define STEALTHCHOP_J
-  #define STEALTHCHOP_K
-  #define STEALTHCHOP_U
-  #define STEALTHCHOP_V
-  #define STEALTHCHOP_W
-  #define STEALTHCHOP_E
+  #if HAS_STEALTHCHOP
+    #define STEALTHCHOP_XY
+    #define STEALTHCHOP_Z
+    #define STEALTHCHOP_I
+    #define STEALTHCHOP_J
+    #define STEALTHCHOP_K
+    #define STEALTHCHOP_U
+    #define STEALTHCHOP_V
+    #define STEALTHCHOP_W
+    #define STEALTHCHOP_E
+  #endif
 
   /**
    * Optimize spreadCycle chopper parameters by using predefined parameter sets
