@@ -37,7 +37,7 @@
  *
  * Advanced settings can be found in Configuration_adv.h
  */
-#define CONFIGURATION_H_VERSION 02010200
+#define CONFIGURATION_H_VERSION 02010300
 
 //===========================================================================
 //============================= Getting Started =============================
@@ -2040,7 +2040,7 @@
     //#define EXTRAPOLATE_BEYOND_GRID
 
     //
-    // Experimental Subdivision of the grid by Catmull-Rom method.
+    // Subdivision of the grid by Catmull-Rom method.
     // Synthesizes intermediate points to produce a more detailed mesh.
     //
     //#define ABL_BILINEAR_SUBDIVISION
@@ -2325,7 +2325,7 @@
 #endif
 
 /**
- * Clean Nozzle Feature -- EXPERIMENTAL
+ * Clean Nozzle Feature
  *
  * Adds the G12 command to perform a nozzle cleaning process.
  *
@@ -2359,7 +2359,6 @@
  *       Before starting, the nozzle moves to NOZZLE_CLEAN_START_POINT.
  *
  *   Caveats: The ending Z should be the same as starting Z.
- * Attention: EXPERIMENTAL. G-code arguments may change.
  */
 //#define NOZZLE_CLEAN_FEATURE
 
@@ -3043,6 +3042,9 @@
  * IA_CREALITY (T5UID1)
  *  - Download https://github.com/InsanityAutomation/Marlin/raw/CrealityDwin2.0_Bleeding/TM3D_Combined480272_Landscape_V7.7z
  *  - Copy the downloaded DWIN_SET folder to the SD card.
+ *
+ * CREALITY_TOUCH
+ *  - CR-6 OEM touch screen. A DWIN display with touch.
  *
  * Flash display with DGUS Displays for Marlin:
  *  - Format the SD card to FAT32 with an allocation size of 4kb.
