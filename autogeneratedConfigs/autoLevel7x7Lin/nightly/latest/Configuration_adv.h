@@ -377,7 +377,7 @@
 #endif
 
 #if ENABLED(PIDTEMP)
-  // Add an experimental additional term to the heater power, proportional to the extrusion speed.
+  // Add an additional term to the heater power, proportional to the extrusion speed.
   // A well-chosen Kc value should add just enough power to melt the increased material volume.
   //#define PID_EXTRUSION_SCALING
   #if ENABLED(PID_EXTRUSION_SCALING)
@@ -386,7 +386,7 @@
   #endif
 
   /**
-   * Add an experimental additional term to the heater power, proportional to the fan speed.
+   * Add an additional term to the heater power, proportional to the fan speed.
    * A well-chosen Kf value should add just enough power to compensate for power-loss from the cooling fan.
    * You can either just add a constant compensation with the DEFAULT_Kf value
    * or follow the instruction below to get speed-dependent compensation.
@@ -1438,9 +1438,8 @@
 #if HAS_DISPLAY
   //#define SOUND_MENU_ITEM   // Add a mute option to the LCD menu
   #define SOUND_ON_DEFAULT    // Buzzer/speaker default enabled state
-#endif
 
-#if HAS_DISPLAY  // The timeout to return to the status screen from sub-menus
+  // The timeout to return to the status screen from sub-menus
   //#define LCD_TIMEOUT_TO_STATUS 15000   // (ms)
 
   #if ENABLED(SHOW_BOOTSCREEN)
@@ -1461,6 +1460,9 @@
 
   // Show the E position (filament used) during printing
   //#define LCD_SHOW_E_TOTAL
+
+  // Display a negative temperature instead of "err"
+  //#define SHOW_TEMPERATURE_BELOW_ZERO
 
   /**
    * LED Control Menu
