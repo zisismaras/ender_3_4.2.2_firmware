@@ -4532,6 +4532,12 @@
 #endif
 
 /**
+ * M111 - Set the debug level. Disable to save ~234 bytes of flash.
+ *        Some hosts (Repetier Host) rely on this feature.
+ */
+#define DEBUG_LEVEL_GCODE
+
+/**
  * Postmortem Debugging captures misbehavior and outputs the CPU status and backtrace to serial.
  * When running in the debugger it will break for debugging. This is useful to help understand
  * a crash from a remote location. Requires ~400 bytes of SRAM and 5Kb of flash.
