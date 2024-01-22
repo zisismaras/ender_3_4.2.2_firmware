@@ -586,9 +586,6 @@
   #define CONTROLLERFAN_SPEED_IDLE        0 // (0-255) Idle speed, used when motors are disabled
   #define CONTROLLERFAN_IDLE_TIME        60 // (seconds) Extra time to keep the fan running after disabling motors
 
-  //#define CONTROLLERFAN_KICKSTART_TIME  100  // (ms)
-  //#define CONTROLLERFAN_KICKSTART_POWER 180  // 64-255
-
   // Use TEMP_SENSOR_BOARD as a trigger for enabling the controller fan
   //#define CONTROLLER_FAN_MIN_BOARD_TEMP 40  // (°C) Turn on the fan if the board reaches this temperature
 
@@ -607,8 +604,8 @@
  * gets it spinning reliably for a short time before setting the requested speed.
  * (Does not work on Sanguinololu with FAN_SOFT_PWM.)
  */
-//#define EFAN_KICKSTART_TIME  100  // (ms)
-//#define EFAN_KICKSTART_POWER 180  // 64-255
+//#define FAN_KICKSTART_TIME  100  // (ms)
+//#define FAN_KICKSTART_POWER 180  // 64-255
 
 // Some coolers may require a non-zero "off" state.
 //#define FAN_OFF_PWM  1
@@ -697,15 +694,12 @@
 #define CHAMBER_AUTO_FAN_PIN -1
 #define COOLER_AUTO_FAN_PIN -1
 
-#define EXTRUDER_AUTO_FAN_TEMPERATURE        50
-#define EXTRUDER_AUTO_FAN_SPEED             255  // 255 is full speed
-//#define EXTRUDER_AUTO_FAN_KICKSTART_TIME  100  // (ms)
-//#define EXTRUDER_AUTO_FAN_KICKSTART_POWER 180  // 64-255
-
-#define CHAMBER_AUTO_FAN_TEMPERATURE   28
-#define CHAMBER_AUTO_FAN_SPEED        255
-#define COOLER_AUTO_FAN_TEMPERATURE    18
-#define COOLER_AUTO_FAN_SPEED         255
+#define EXTRUDER_AUTO_FAN_TEMPERATURE 50
+#define EXTRUDER_AUTO_FAN_SPEED 255   // 255 == full speed
+#define CHAMBER_AUTO_FAN_TEMPERATURE 30
+#define CHAMBER_AUTO_FAN_SPEED 255
+#define COOLER_AUTO_FAN_TEMPERATURE 18
+#define COOLER_AUTO_FAN_SPEED 255
 
 /**
  * Hotend Cooling Fans tachometers
@@ -2346,9 +2340,6 @@
   #endif
   //#define ADVANCE_K_EXTRA       // Add a second linear advance constant, configurable with M900 L.
   //#define LA_DEBUG              // Print debug information to serial during operation. Disable for production use.
-  #if ENABLED(CLASSIC_JERK)
-    //#define ALLOW_LOW_EJERK     // Allow a DEFAULT_EJERK value of <10. Recommended for direct drive hotends.
-  #endif
   //#define EXPERIMENTAL_I2S_LA   // Allow I2S_STEPPER_STREAM to be used with LA. Performance degrades as the LA step rate reaches ~20kHz.
 #endif
 
