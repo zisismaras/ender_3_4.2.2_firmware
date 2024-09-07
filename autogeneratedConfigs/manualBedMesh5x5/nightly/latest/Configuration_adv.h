@@ -4640,6 +4640,7 @@
   //#define MMU2_DEBUG  // Write debug info to serial output
 
 #endif // HAS_PRUSA_MMU2 || HAS_PRUSA_MMU3
+
 /**
  * Advanced Print Counter settings
  * @section stats
