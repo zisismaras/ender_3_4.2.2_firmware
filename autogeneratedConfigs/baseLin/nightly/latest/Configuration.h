@@ -127,7 +127,11 @@
 #endif
 
 // Enable CAN bus support and protocol
-//#define CAN_MASTER
+//#define CAN_HOST
+//#define CAN_TOOLHEAD
+#if ANY(CAN_HOST, CAN_TOOLHEAD)
+  //#define CAN_DEBUG
+#endif
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
