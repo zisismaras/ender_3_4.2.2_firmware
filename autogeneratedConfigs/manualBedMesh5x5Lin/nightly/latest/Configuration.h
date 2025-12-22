@@ -477,7 +477,7 @@
 //===========================================================================
 //============================= Thermal Settings ============================
 //===========================================================================
-// @section temperature
+// @section temperature sensors
 
 /**
  * Temperature Sensors:
@@ -661,6 +661,8 @@
   #define TEMP_SENSOR_REDUNDANT_TARGET    E0  // The sensor that we are providing a redundant reading for.
   #define TEMP_SENSOR_REDUNDANT_MAX_DIFF  10  // (°C) Temperature difference that will trigger a print abort.
 #endif
+
+// @section temperature
 
 // Below this temperature the heater will be switched off
 // because it probably indicates a broken thermistor wire.
@@ -1877,15 +1879,12 @@
 //#define DISABLE_V
 //#define DISABLE_W
 
-// Turn off the display blinking that warns about possible accuracy reduction
-//#define DISABLE_REDUCED_ACCURACY_WARNING
-
 // @section extruder
 
 //#define DISABLE_E               // Disable the extruder when not stepping
 //#define DISABLE_OTHER_EXTRUDERS // Keep only the active extruder enabled
 
-// @section motion
+// @section stepper drivers
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
@@ -1897,8 +1896,6 @@
 //#define INVERT_U_DIR false
 //#define INVERT_V_DIR false
 //#define INVERT_W_DIR false
-
-// @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
 #define INVERT_E0_DIR false
@@ -2550,7 +2547,7 @@
 //
 //#define TEMPERATURE_UNITS_SUPPORT
 
-// @section temperature
+// @section temperature presets
 
 //
 // Preheat Constants - Up to 10 are supported without changes
